@@ -1,0 +1,6 @@
+@OdontoAPIMinimal_HostAddress = http://localhost:5052
+
+GET {{OdontoAPIMinimal_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
