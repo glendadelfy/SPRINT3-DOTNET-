@@ -44,9 +44,8 @@ Vizualização da API:![image](https://github.com/user-attachments/assets/72c3fa
 - Necessario ter a IDE Visual Studio 2022 ou RIder
 - Ter o jdk 8 instalado que é o usado no projeto
 - Abrir a solução do Projeto ![image](https://github.com/user-attachments/assets/a3bdfd5a-9eed-46ba-a500-21e9660f7daf)
-- Compilar a solução no http: ![image](https://github.com/user-attachments/assets/7e24b2ec-6768-44cf-8faa-5aa512bfd3a1)
-- Pronto! Irá abrir uma janela no seu browser com a API do swagger igual a imgagem:
-  ![image](https://github.com/user-attachments/assets/a41a64f4-0fbf-4edf-8c39-bb43d4e07c80)
+- Compilar a solução no http: ![image](https://github.com/user-attachments/assets/ec382340-bf76-4d19-bf5c-ceaa9f8d796d)
+- Pronto! Irá abrir uma janela no seu browser com a API do swagger igual a imagem 7. 
 - Aqui você poderá fazer um create, read, update e delete
   Considerações finais é aprimorar a API  
 
