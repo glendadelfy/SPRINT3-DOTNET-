@@ -1,5 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using OdontoAPIMinimal.Infraestrutura.Database;
+using OdontoAPIMinimal.Services;
 using OdontoMinimalAPI.Models;
 
 namespace OdontoAPIMinimal.Middelewares.Endpoints
@@ -58,8 +60,18 @@ namespace OdontoAPIMinimal.Middelewares.Endpoints
                 : TypedResults.NotFound();
         }
 
-        static async Task<IResult> CreateUsuario(UsuarioModel usuarioModel, AppDbContext db)
+        static async Task<IResult> CreateUsuario(UsuarioModel usuarioModel, AppDbContext db, [FromHeader(Name = "Idempotency-Key")] string idempotencyKey)
         {
+            var idempotencyService = new IdempotencyService(db);
+
+            // Verificar se a chave já foi usada
+            if (await idempotencyService.IsDuplicateRequestAsync(idempotencyKey))
+            {
+                var storedResponse = await idempotencyService.GetStoredResponseAsync(idempotencyKey);
+                return TypedResults.Ok(storedResponse); // Retornar resposta armazenada
+            }
+            Console.WriteLine($"Processando nova chave de idempotência: {idempotencyKey}");
+            // Criar novo usuário
             var usuario = new UsuarioModel
             {
                 Name = usuarioModel.Name,
@@ -73,6 +85,8 @@ namespace OdontoAPIMinimal.Middelewares.Endpoints
 
             db.Usuarios.Add(usuario);
             await db.SaveChangesAsync();
+            // Salvar a chave de idempotência e o resultado
+            await idempotencyService.SaveIdempotencyKeyAsync(idempotencyKey, 201, usuario);
             return TypedResults.Created($"/usuarios/{usuario.Id}", usuario);
         }
 

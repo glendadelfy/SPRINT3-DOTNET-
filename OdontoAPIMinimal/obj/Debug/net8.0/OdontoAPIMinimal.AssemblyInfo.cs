@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OdontoAPIMinimal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+21cfcd5306b06352951a175615e69e29b975cfa4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cecd0301e7bd550a071f28a4d22beaea3a7ff670")]
 [assembly: System.Reflection.AssemblyProductAttribute("OdontoAPIMinimal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OdontoAPIMinimal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

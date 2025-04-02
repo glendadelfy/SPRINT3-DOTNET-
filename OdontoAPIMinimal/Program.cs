@@ -2,9 +2,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using OdontoAPIMinimal.Infraestrutura.Database;
 using OdontoAPIMinimal.Middelewares.Endpoints;
+using OdontoMinimalAPI.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-// desenvolvido por Glenda Delfy 19/03/2025
+// desenvolvido por Glenda Delfy 01/04/2025
 // Add services to the container.
 
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -21,7 +22,7 @@ builder.Services.AddSwaggerGen(options =>
     {
         Title = "Odonto Minimal API",
         Version = "v1",
-        Description = "API para gerenciamento de usu�rios e funcionalidades odontol�gicas.",
+        Description = "API para gerenciamento de usuarios e funcionalidades odontologicas.",
         Contact = new OpenApiContact
         {
             Name = "Glenda",
@@ -29,6 +30,22 @@ builder.Services.AddSwaggerGen(options =>
             Url = new Uri("https://github.com/glendadelfy/SPRINT3-DOTNET-") // Opcional: Adicione o link do seu reposit�rio/projeto.
         }
     });
+    options.MapType<UsuarioModel>(() => new OpenApiSchema
+    {
+        Type = "object",
+        Properties = new Dictionary<string, OpenApiSchema>
+        {
+            { "Id", new OpenApiSchema { Type = "integer", Description = "Identificador único do usuário" } },
+            { "Name", new OpenApiSchema { Type = "string", Description = "Nome completo do usuário" } },
+            { "Email", new OpenApiSchema { Type = "string", Description = "Endereço de email do usuário" } },
+            { "Password", new OpenApiSchema { Type = "string", Description = "Senha do usuário (hash ou criptografada)" } },
+            { "isActive", new OpenApiSchema { Type = "boolean", Description = "Indicador se o usuário está ativo ou inativo" } },
+            { "IsComplete", new OpenApiSchema { Type = "boolean", Description = "Indicador se o perfil do usuário está completo" } },
+            { "Role", new OpenApiSchema { Type = "string", Description = "Função ou cargo do usuário na aplicação" } },
+            { "Avatar", new OpenApiSchema { Type = "string", Description = "URL para o avatar ou imagem do usuário" } }
+        }
+    });
+
 });
 
 var app = builder.Build();

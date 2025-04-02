@@ -29,6 +29,11 @@
         "Name": "usuarioModel",
         "Type": "OdontoMinimalAPI.Models.UsuarioModel",
         "IsRequired": true
+      },
+      {
+        "Name": "Idempotency-Key",
+        "Type": "System.String",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
@@ -40,6 +45,39 @@
     ],
     "Description": "Adiciona um novo usu\u00E1rio ao banco de dados.",
     "Summary": "Cria um novo usu\u00E1rio"
+  },
+  {
+    "ContainingType": "Program\u002B\u003C\u003Ec",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_2",
+    "RelativePath": "usuarios/{id}",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "OdontoMinimalAPI.Models.UsuarioModel",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 404
+      }
+    ],
+    "Description": "Retorna os dados de um usu\u00E1rio espec\u00EDfico.",
+    "Summary": "Obt\u00E9m um usu\u00E1rio pelo ID"
   },
   {
     "ContainingType": "OdontoAPIMinimal.Middelewares.Endpoints.UsuarioEndpoint",

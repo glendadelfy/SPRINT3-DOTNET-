@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using OdontoAPIMinimal.Models;
 using OdontoMinimalAPI.Models;
 using System.Collections.Generic;
 
@@ -11,5 +12,6 @@ namespace OdontoAPIMinimal.Infraestrutura.Database
 
         }
         public DbSet<UsuarioModel> Usuarios { get; set; }
+        public DbSet<IdempotencyKey> IdempotencyKeys { get; set; } // Novo DbSet
     }
 }
