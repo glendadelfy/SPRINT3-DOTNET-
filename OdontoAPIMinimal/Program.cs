@@ -1,3 +1,6 @@
+using IdempotentAPI.Cache.DistributedCache.Extensions.DependencyInjection;
+using IdempotentAPI.Core;
+using IdempotentAPI.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using OdontoAPIMinimal.Infraestrutura.Database;
@@ -5,7 +8,7 @@ using OdontoAPIMinimal.Middelewares.Endpoints;
 using OdontoMinimalAPI.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-// desenvolvido por Glenda Delfy 01/04/2025
+// desenvolvido por Glenda Delfy 22/04/2025
 // Add services to the container.
 
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -47,6 +50,11 @@ builder.Services.AddSwaggerGen(options =>
     });
 
 });
+
+builder.Services.AddIdempotentAPI();
+builder.Services.AddIdempotentMinimalAPI(new IdempotencyOptions());
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddIdempotentAPIUsingDistributedCache();
 
 var app = builder.Build();
 

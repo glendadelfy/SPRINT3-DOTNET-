@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Esse arquivo é usado pelo processo de publicação/pacote do seu projeto Web. É possível personalizar o comportamento deste processo
+ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAyFnz3tZyHUipaQnKwrBUNgAAAAACAAAAAAAQZgAAAAEAACAAAAA9RyoWcbUKKbBv6krh6QuaqK6/qbhrM19GxKQVRdAgGwAAAAAOgAAAAAIAACAAAADAcdGhxA/TvIZpPBF3tt6MGPJiX8Nha2ZptUAQlYzAAoAAAAAOJibt2TEL4wIoUcyTffahuqnukLnzsOXq1SrQIfD0CXe4JitBwgFcppHnjyVR8i7Qc94j6NBn4Qt3bw+b0DtKRYFVsDDmBGtVpeBg/WsphMbq8VjANvnaWVuSFkL2xxVYpAOil7Xl+gueu+MSYhUSkPejt4XeP+34s549edMyAEAAAABkMH42XAEhIi9gIt6R8umYWCEyBDcjmnbWyRjXuLs+5t7RBXNKSFbkUNGxayb1C0vjfRqJCC8WGbZmG73eEYOc</EncryptedPassword>
+    <History>True|2025-04-07T01:20:25.7455560Z||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=tcp:meuserver552667.database.windows.net,1433%3bInitial Catalog=rm552667%3bPersist Security Info=False%3bUser ID=rm552667%3bPassword=Onumeroe15%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=30%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

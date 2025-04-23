@@ -12,7 +12,7 @@ namespace OdontoAPIMinimal.Middelewares.Endpoints
         {
             var usuarioItemsGroup = app.MapGroup("/usuarios");
 
-            usuarioItemsGroup.MapGet("/", GetAllUsuarios)
+            usuarioItemsGroup.MapGet("/cadastrados", GetAllUsuarios)
                 .WithSummary("Lista todos os usuários cadastrados")
                 .WithDescription("Acessa o banco de dados e retorna todos os usuários cadastrados.");
 
@@ -20,19 +20,19 @@ namespace OdontoAPIMinimal.Middelewares.Endpoints
                 .WithSummary("Lista todos os usuários ativos")
                 .WithDescription("Retorna apenas os usuários que estão marcados como ativos.");
 
-            usuarioItemsGroup.MapGet("/{id}", GetUsuario)
+            usuarioItemsGroup.MapGet("/buscar/{id}", GetUsuario)
                 .WithSummary("Busca um usuário específico por ID")
                 .WithDescription("Procura no banco de dados um usuário correspondente ao ID fornecido.");
 
-            usuarioItemsGroup.MapPost("/", CreateUsuario)
+            usuarioItemsGroup.MapPost("/criar", CreateUsuario)
                 .WithSummary("Cria um novo usuário")
                 .WithDescription("Adiciona um novo usuário ao banco de dados.");
 
-            usuarioItemsGroup.MapPut("/{id}", UpdateUsuario)
+            usuarioItemsGroup.MapPut("/atualizar/{id}", UpdateUsuario)
                 .WithSummary("Atualiza um usuário existente")
                 .WithDescription("Atualiza os dados de um usuário específico baseado no ID fornecido.");
 
-            usuarioItemsGroup.MapDelete("/{id}", DeleteUsuario)
+            usuarioItemsGroup.MapDelete("/deletar/{id}", DeleteUsuario)
                 .WithSummary("Deleta um usuário")
                 .WithDescription("Remove um usuário específico do banco de dados.");
         }

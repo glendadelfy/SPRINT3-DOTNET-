@@ -50,6 +50,22 @@
               "target": "Package",
               "version": "[8.2.0, )"
             },
+            "IdempotentAPI": {
+              "target": "Package",
+              "version": "[2.6.0, )"
+            },
+            "IdempotentAPI.Cache.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "IdempotentAPI.Cache.DistributedCache": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "IdempotentAPI.MinimalAPI": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.14, )"
@@ -110,7 +126,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

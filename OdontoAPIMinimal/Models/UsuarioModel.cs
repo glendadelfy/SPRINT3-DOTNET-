@@ -31,7 +31,7 @@ namespace OdontoMinimalAPI.Models
         public string Avatar { get; set; } = "https://images.hdqwalls.com/download/cute-pikachu-6o-3840x2160.jpg";
 
         public UsuarioModel() { }
-        public UsuarioModel(Todo todo) => (Id, Name, IsComplete)
+        public UsuarioModel(UsuarioEntiti todo) => (Id, Name, IsComplete)
         = (todo.Id, todo.Name, todo.IsComplete);
 
     }
