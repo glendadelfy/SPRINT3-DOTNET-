@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\glend\\source\\repos\\OdontoAPIMinimal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{44AF6FA1-03CB-4713-BC2B-7452D39E0186}|OdontoAPIMinimal\\OdontoAPIMinimal.csproj|c:\\users\\glend\\source\\repos\\odontoapiminimal\\odontoapiminimal\\middelewares\\endpoints\\usuarioendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44AF6FA1-03CB-4713-BC2B-7452D39E0186}|OdontoAPIMinimal\\OdontoAPIMinimal.csproj|solutionrelative:odontoapiminimal\\middelewares\\endpoints\\usuarioendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{44AF6FA1-03CB-4713-BC2B-7452D39E0186}|OdontoAPIMinimal\\OdontoAPIMinimal.csproj|c:\\users\\glend\\source\\repos\\odontoapiminimal\\odontoapiminimal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44AF6FA1-03CB-4713-BC2B-7452D39E0186}|OdontoAPIMinimal\\OdontoAPIMinimal.csproj|solutionrelative:odontoapiminimal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44AF6FA1-03CB-4713-BC2B-7452D39E0186}|OdontoAPIMinimal\\OdontoAPIMinimal.csproj|c:\\users\\glend\\source\\repos\\odontoapiminimal\\odontoapiminimal\\odontoapiminimal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{44AF6FA1-03CB-4713-BC2B-7452D39E0186}|OdontoAPIMinimal\\OdontoAPIMinimal.csproj|solutionrelative:odontoapiminimal\\odontoapiminimal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{44AF6FA1-03CB-4713-BC2B-7452D39E0186}|OdontoAPIMinimal\\OdontoAPIMinimal.csproj|c:\\users\\glend\\source\\repos\\odontoapiminimal\\odontoapiminimal\\models\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{44AF6FA1-03CB-4713-BC2B-7452D39E0186}|OdontoAPIMinimal\\OdontoAPIMinimal.csproj|solutionrelative:odontoapiminimal\\models\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44AF6FA1-03CB-4713-BC2B-7452D39E0186}|OdontoAPIMinimal\\OdontoAPIMinimal.csproj|c:\\users\\glend\\source\\repos\\odontoapiminimal\\odontoapiminimal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44AF6FA1-03CB-4713-BC2B-7452D39E0186}|OdontoAPIMinimal\\OdontoAPIMinimal.csproj|solutionrelative:odontoapiminimal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{44AF6FA1-03CB-4713-BC2B-7452D39E0186}|OdontoAPIMinimal\\OdontoAPIMinimal.csproj|c:\\users\\glend\\source\\repos\\odontoapiminimal\\odontoapiminimal\\middelewares\\endpoints\\usuarioendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44AF6FA1-03CB-4713-BC2B-7452D39E0186}|OdontoAPIMinimal\\OdontoAPIMinimal.csproj|solutionrelative:odontoapiminimal\\middelewares\\endpoints\\usuarioendpoint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{44AF6FA1-03CB-4713-BC2B-7452D39E0186}|OdontoAPIMinimal\\OdontoAPIMinimal.csproj|c:\\users\\glend\\source\\repos\\odontoapiminimal\\odontoapiminimal\\services\\idempotencyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{44AF6FA1-03CB-4713-BC2B-7452D39E0186}|OdontoAPIMinimal\\OdontoAPIMinimal.csproj|c:\\users\\glend\\source\\repos\\odontoapiminimal\\odontoapiminimal\\models\\idempotencykeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{44AF6FA1-03CB-4713-BC2B-7452D39E0186}|OdontoAPIMinimal\\OdontoAPIMinimal.csproj|solutionrelative:odontoapiminimal\\models\\idempotencykeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44AF6FA1-03CB-4713-BC2B-7452D39E0186}|OdontoAPIMinimal\\OdontoAPIMinimal.csproj|c:\\users\\glend\\source\\repos\\odontoapiminimal\\odontoapiminimal\\odontoapiminimal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{44AF6FA1-03CB-4713-BC2B-7452D39E0186}|OdontoAPIMinimal\\OdontoAPIMinimal.csproj|solutionrelative:odontoapiminimal\\odontoapiminimal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{44AF6FA1-03CB-4713-BC2B-7452D39E0186}|OdontoAPIMinimal\\OdontoAPIMinimal.csproj|c:\\users\\glend\\source\\repos\\odontoapiminimal\\odontoapiminimal\\context\\database\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -111,7 +111,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 24,
+          "SelectedChildIndex": 29,
           "Children": [
             {
               "$type": "Bookmark",
@@ -213,7 +213,6 @@
               "RelativeDocumentMoniker": "APIMinimalTests\\Context\\Database\\AppDbContext.cs",
               "ToolTip": "C:\\Users\\glend\\source\\repos\\OdontoAPIMinimal\\APIMinimalTests\\Context\\Database\\AppDbContext.cs",
               "RelativeToolTip": "APIMinimalTests\\Context\\Database\\AppDbContext.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAswBMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-03T02:28:08.957Z"
             },
@@ -225,7 +224,6 @@
               "RelativeDocumentMoniker": "APIMinimalTests\\APIMinimalTests.csproj",
               "ToolTip": "C:\\Users\\glend\\source\\repos\\OdontoAPIMinimal\\APIMinimalTests\\APIMinimalTests.csproj",
               "RelativeToolTip": "APIMinimalTests\\APIMinimalTests.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-04-03T02:04:04.439Z"
             },
@@ -237,7 +235,6 @@
               "RelativeDocumentMoniker": "APIMinimalTests\\Endpoints\\UsuarioEndpointTests.cs",
               "ToolTip": "C:\\Users\\glend\\source\\repos\\OdontoAPIMinimal\\APIMinimalTests\\Endpoints\\UsuarioEndpointTests.cs",
               "RelativeToolTip": "APIMinimalTests\\Endpoints\\UsuarioEndpointTests.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAswBgAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-03T02:02:36.634Z"
             },
@@ -249,7 +246,6 @@
               "RelativeDocumentMoniker": "APIMinimalTests\\Services\\UsuarioService.cs",
               "ToolTip": "C:\\Users\\glend\\source\\repos\\OdontoAPIMinimal\\APIMinimalTests\\Services\\UsuarioService.cs",
               "RelativeToolTip": "APIMinimalTests\\Services\\UsuarioService.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAowEMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-02T22:15:25.363Z"
             },
@@ -261,7 +257,6 @@
               "RelativeDocumentMoniker": "APIMinimalTests\\Services\\dempotencyServiceTests.cs",
               "ToolTip": "C:\\Users\\glend\\source\\repos\\OdontoAPIMinimal\\APIMinimalTests\\Services\\dempotencyServiceTests.cs",
               "RelativeToolTip": "APIMinimalTests\\Services\\dempotencyServiceTests.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAUwCkAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-02T22:08:53.097Z"
             },
@@ -273,7 +268,6 @@
               "RelativeDocumentMoniker": "APIMinimalTests\\NovaPasta1\\UsuarioModelValidatorTests.cs",
               "ToolTip": "C:\\Users\\glend\\source\\repos\\OdontoAPIMinimal\\APIMinimalTests\\NovaPasta1\\UsuarioModelValidatorTests.cs",
               "RelativeToolTip": "APIMinimalTests\\NovaPasta1\\UsuarioModelValidatorTests.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAIwCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-02T22:03:59.903Z"
             },
@@ -285,7 +279,6 @@
               "RelativeDocumentMoniker": "APIMinimalTests\\UnitTest1.cs",
               "ToolTip": "C:\\Users\\glend\\source\\repos\\OdontoAPIMinimal\\APIMinimalTests\\UnitTest1.cs",
               "RelativeToolTip": "APIMinimalTests\\UnitTest1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-02T21:53:18.958Z"
             },
@@ -327,7 +320,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "IdempotencyService.cs",
               "DocumentMoniker": "C:\\Users\\glend\\source\\repos\\OdontoAPIMinimal\\OdontoAPIMinimal\\Services\\IdempotencyService.cs",
               "RelativeDocumentMoniker": "OdontoAPIMinimal\\Services\\IdempotencyService.cs",
@@ -339,7 +332,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "IdempotencyKeys.cs",
               "DocumentMoniker": "C:\\Users\\glend\\source\\repos\\OdontoAPIMinimal\\OdontoAPIMinimal\\Models\\IdempotencyKeys.cs",
               "RelativeDocumentMoniker": "OdontoAPIMinimal\\Models\\IdempotencyKeys.cs",
@@ -363,16 +356,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "UsuarioEndpoint.cs",
               "DocumentMoniker": "C:\\Users\\glend\\source\\repos\\OdontoAPIMinimal\\OdontoAPIMinimal\\Middelewares\\Endpoints\\UsuarioEndpoint.cs",
               "RelativeDocumentMoniker": "OdontoAPIMinimal\\Middelewares\\Endpoints\\UsuarioEndpoint.cs",
               "ToolTip": "C:\\Users\\glend\\source\\repos\\OdontoAPIMinimal\\OdontoAPIMinimal\\Middelewares\\Endpoints\\UsuarioEndpoint.cs",
               "RelativeToolTip": "OdontoAPIMinimal\\Middelewares\\Endpoints\\UsuarioEndpoint.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAowBgAAABpAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwHoAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T14:27:25.041Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-19T14:27:25.041Z"
             },
             {
               "$type": "Document",
@@ -388,7 +380,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "OdontoAPIMinimal.csproj",
               "DocumentMoniker": "C:\\Users\\glend\\source\\repos\\OdontoAPIMinimal\\OdontoAPIMinimal\\OdontoAPIMinimal.csproj",
               "RelativeDocumentMoniker": "OdontoAPIMinimal\\OdontoAPIMinimal.csproj",
@@ -400,13 +392,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UsuarioModel.cs",
               "DocumentMoniker": "C:\\Users\\glend\\source\\repos\\OdontoAPIMinimal\\OdontoAPIMinimal\\Models\\UsuarioModel.cs",
               "RelativeDocumentMoniker": "OdontoAPIMinimal\\Models\\UsuarioModel.cs",
               "ToolTip": "C:\\Users\\glend\\source\\repos\\OdontoAPIMinimal\\OdontoAPIMinimal\\Models\\UsuarioModel.cs",
               "RelativeToolTip": "OdontoAPIMinimal\\Models\\UsuarioModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-19T13:25:58.347Z"
             },
@@ -418,21 +410,22 @@
               "RelativeDocumentMoniker": "OdontoAPIMinimal\\Context\\Database\\AppDbContext.cs",
               "ToolTip": "C:\\Users\\glend\\source\\repos\\OdontoAPIMinimal\\OdontoAPIMinimal\\Context\\Database\\AppDbContext.cs",
               "RelativeToolTip": "OdontoAPIMinimal\\Context\\Database\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-19T13:24:34.996Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\glend\\source\\repos\\OdontoAPIMinimal\\OdontoAPIMinimal\\Program.cs",
               "RelativeDocumentMoniker": "OdontoAPIMinimal\\Program.cs",
               "ToolTip": "C:\\Users\\glend\\source\\repos\\OdontoAPIMinimal\\OdontoAPIMinimal\\Program.cs",
               "RelativeToolTip": "OdontoAPIMinimal\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T13:22:18.064Z"
+              "WhenOpened": "2025-03-19T13:22:18.064Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

@@ -137,3 +137,9 @@ C:\Users\glend\source\repos\OdontoAPIMinimal\OdontoAPIMinimal\obj\Debug\net8.0\r
 C:\Users\glend\source\repos\OdontoAPIMinimal\OdontoAPIMinimal\obj\Debug\net8.0\OdontoAPIMinimal.pdb
 C:\Users\glend\source\repos\OdontoAPIMinimal\OdontoAPIMinimal\obj\Debug\net8.0\OdontoAPIMinimal.genruntimeconfig.cache
 C:\Users\glend\source\repos\OdontoAPIMinimal\OdontoAPIMinimal\obj\Debug\net8.0\ref\OdontoAPIMinimal.dll
+C:\Users\glend\source\repos\OdontoAPIMinimal\OdontoAPIMinimal\bin\Debug\net8.0\IdempotentAPI.dll
+C:\Users\glend\source\repos\OdontoAPIMinimal\OdontoAPIMinimal\bin\Debug\net8.0\IdempotentAPI.AccessCache.dll
+C:\Users\glend\source\repos\OdontoAPIMinimal\OdontoAPIMinimal\bin\Debug\net8.0\IdempotentAPI.Cache.Abstractions.dll
+C:\Users\glend\source\repos\OdontoAPIMinimal\OdontoAPIMinimal\bin\Debug\net8.0\IdempotentAPI.Cache.DistributedCache.dll
+C:\Users\glend\source\repos\OdontoAPIMinimal\OdontoAPIMinimal\bin\Debug\net8.0\IdempotentAPI.DistributedAccessLock.Abstractions.dll
+C:\Users\glend\source\repos\OdontoAPIMinimal\OdontoAPIMinimal\bin\Debug\net8.0\IdempotentAPI.MinimalAPI.dll

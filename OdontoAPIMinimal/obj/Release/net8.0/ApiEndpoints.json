@@ -32,7 +32,7 @@
       },
       {
         "Name": "usuarioModel",
-        "Type": "OdontoMinimalAPI.Models.UsuarioModel",
+        "Type": "OdontoAPIMinimal.Models.UsuarioModel",
         "IsRequired": true
       }
     ],
@@ -98,7 +98,7 @@
     "Parameters": [
       {
         "Name": "usuarioModel",
-        "Type": "OdontoMinimalAPI.Models.UsuarioModel",
+        "Type": "OdontoAPIMinimal.Models.UsuarioModel",
         "IsRequired": true
       },
       {

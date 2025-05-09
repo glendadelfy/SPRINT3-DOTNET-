@@ -14,7 +14,9 @@ namespace OdontoAPIMinimal.Models
         public int StatusCode { get; set; }
 
         [Required]
-        public string ResponseBody { get; set; }
+        [Column("response_body")]
+        [StringLength(500)]
+        public string ResponseBody { get; set; } = string.Empty;
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }

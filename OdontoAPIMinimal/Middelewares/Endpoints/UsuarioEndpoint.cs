@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using OdontoAPIMinimal.Infraestrutura.Database;
+using OdontoAPIMinimal.Context.Database;
 using OdontoAPIMinimal.Services;
-using OdontoMinimalAPI.Models;
+using OdontoAPIMinimal.Models;
 
 namespace OdontoAPIMinimal.Middelewares.Endpoints
 {
@@ -47,7 +47,7 @@ namespace OdontoAPIMinimal.Middelewares.Endpoints
         static async Task<IResult> GetActiveUsuarios(AppDbContext db)
         {
             var usuariosAtivos = await db.Usuarios
-                .Where(u => u.isActive)
+                .Where(u => u.IsActive)
                 .ToListAsync();
             return TypedResults.Ok(usuariosAtivos);
         }
@@ -77,7 +77,7 @@ namespace OdontoAPIMinimal.Middelewares.Endpoints
                 Name = usuarioModel.Name,
                 Email = usuarioModel.Email,
                 Password = usuarioModel.Password,
-                isActive = usuarioModel.isActive,
+                IsActive = usuarioModel.IsActive,
                 IsComplete = usuarioModel.IsComplete,
                 Role = usuarioModel.Role,
                 Avatar = usuarioModel.Avatar
@@ -100,7 +100,7 @@ namespace OdontoAPIMinimal.Middelewares.Endpoints
             usuario.Name = usuarioModel.Name;
             usuario.Email = usuarioModel.Email;
             usuario.Password = usuarioModel.Password;
-            usuario.isActive = usuarioModel.isActive;
+            usuario.IsActive = usuarioModel.IsActive;
             usuario.IsComplete = usuarioModel.IsComplete;
             usuario.Role = usuarioModel.Role;
             usuario.Avatar = usuarioModel.Avatar;

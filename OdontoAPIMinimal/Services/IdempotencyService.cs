@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
-using OdontoAPIMinimal.Infraestrutura.Database;
+using OdontoAPIMinimal.Context.Database;
 using OdontoAPIMinimal.Models;
 
 namespace OdontoAPIMinimal.Services

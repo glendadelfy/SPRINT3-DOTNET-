@@ -1,9 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using OdontoAPIMinimal.Models;
-using OdontoMinimalAPI.Models;
-using System.Collections.Generic;
 
-namespace OdontoAPIMinimal.Infraestrutura.Database
+namespace OdontoAPIMinimal.Context.Database
 {
     public class AppDbContext : DbContext
     {

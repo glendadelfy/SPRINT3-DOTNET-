@@ -3,7 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using OdontoAPIMinimal.Infraestrutura.Database;
+using OdontoAPIMinimal.Context.Database;
 using Oracle.EntityFrameworkCore.Metadata;
 
 #nullable disable
