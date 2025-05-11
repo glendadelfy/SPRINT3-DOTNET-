@@ -8,7 +8,7 @@ using OdontoAPIMinimal.Middelewares.Endpoints;
 using OdontoAPIMinimal.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-// desenvolvido por Glenda Delfy 08/05/2025
+// desenvolvido por Glenda Delfy 10/05/2025
 // Add services to the container.
 
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -93,3 +93,6 @@ app.MapControllers();
 app.RegisterUsuarioEndpoints();
 
 app.Run();
+
+//Code for unit test
+public partial class Program { }
