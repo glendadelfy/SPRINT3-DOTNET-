@@ -3,6 +3,11 @@ using Microsoft.EntityFrameworkCore;
 using OdontoAPIMinimal.Context.Database;
 using OdontoAPIMinimal.Services;
 using OdontoAPIMinimal.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 
 namespace OdontoAPIMinimal.Middelewares.Endpoints
 {
@@ -10,13 +15,47 @@ namespace OdontoAPIMinimal.Middelewares.Endpoints
     {
         public static void RegisterUsuarioEndpoints(this WebApplication app)
         {
+
             var usuarioItemsGroup = app.MapGroup("/usuarios");
 
+            //app.MapGet("/dados-seguros", [Authorize] () =>
+            //{
+            //    return "Este é um dado protegido por JWT!";
+            //});
+            app.MapPost("/admin/login", (IConfiguration config, AdministradorModel usuario) =>
+            {
+                // Simulação de validação de usuário (substitua por validação real)
+                if (usuario.Role != "admin" || usuario.Password!= "123456")
+                    return Results.Unauthorized();
+
+                var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["Jwt:Key"]));
+                var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+                var claims = new[]
+                {
+        new Claim(JwtRegisteredClaimNames.Sub, usuario.Role),
+        new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+    };
+
+                var token = new JwtSecurityToken(
+                    issuer: config["Jwt:Issuer"],
+                    audience: config["Jwt:Audience"],
+                    claims: claims,
+                    expires: DateTime.UtcNow.AddHours(1),
+                    signingCredentials: creds);
+
+                var tokenString = new JwtSecurityTokenHandler().WriteToken(token);
+
+                return Results.Ok(new { token = tokenString });
+            });
+
             usuarioItemsGroup.MapGet("/cadastrados", GetAllUsuarios)
+                .RequireAuthorization()
                 .WithSummary("Lista todos os usuários cadastrados")
                 .WithDescription("Acessa o banco de dados e retorna todos os usuários cadastrados.");
 
             usuarioItemsGroup.MapGet("/ativos", GetActiveUsuarios)
+                 .RequireAuthorization()
                 .WithSummary("Lista todos os usuários ativos")
                 .WithDescription("Retorna apenas os usuários que estão marcados como ativos.");
 

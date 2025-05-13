@@ -143,3 +143,11 @@ C:\Users\glend\source\repos\OdontoAPIMinimal\OdontoAPIMinimal\obj\Release\net8.0
 C:\Users\glend\source\repos\OdontoAPIMinimal\OdontoAPIMinimal\obj\Release\net8.0\OdontoAPIMinimal.pdb
 C:\Users\glend\source\repos\OdontoAPIMinimal\OdontoAPIMinimal\obj\Release\net8.0\OdontoAPIMinimal.genruntimeconfig.cache
 C:\Users\glend\source\repos\OdontoAPIMinimal\OdontoAPIMinimal\obj\Release\net8.0\ref\OdontoAPIMinimal.dll
+C:\Users\glend\source\repos\OdontoAPIMinimal\OdontoAPIMinimal\bin\Release\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\glend\source\repos\OdontoAPIMinimal\OdontoAPIMinimal\bin\Release\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\glend\source\repos\OdontoAPIMinimal\OdontoAPIMinimal\bin\Release\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\glend\source\repos\OdontoAPIMinimal\OdontoAPIMinimal\bin\Release\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\glend\source\repos\OdontoAPIMinimal\OdontoAPIMinimal\bin\Release\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\glend\source\repos\OdontoAPIMinimal\OdontoAPIMinimal\bin\Release\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\glend\source\repos\OdontoAPIMinimal\OdontoAPIMinimal\bin\Release\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\glend\source\repos\OdontoAPIMinimal\OdontoAPIMinimal\bin\Release\net8.0\System.IdentityModel.Tokens.Jwt.dll
