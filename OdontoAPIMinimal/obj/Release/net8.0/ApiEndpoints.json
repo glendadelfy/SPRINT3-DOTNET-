@@ -38,6 +38,54 @@
     ]
   },
   {
+    "ContainingType": "OdontoAPIMinimal.Middelewares.Endpoints.RiscoOdontoEndpoint\u002B\u003C\u003Ec",
+    "Method": "\u003CRegisterRiscoOdontoEndpoint\u003Eb__0_1",
+    "RelativePath": "risco-odonto/prever",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pacientes",
+        "Type": "System.Collections.Generic.List\u00601[[OdontoAPIMinimal.Models.PacienteOdontoModel, OdontoAPIMinimal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Description": "Usa o modelo treinado para prever o risco odontol\u00F3gico dos pacientes.",
+    "Summary": "Realiza previs\u00F5es com o modelo odontol\u00F3gico"
+  },
+  {
+    "ContainingType": "OdontoAPIMinimal.Middelewares.Endpoints.RiscoOdontoEndpoint\u002B\u003C\u003Ec",
+    "Method": "\u003CRegisterRiscoOdontoEndpoint\u003Eb__0_0",
+    "RelativePath": "risco-odonto/treinar-modelo",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pacientes",
+        "Type": "System.Collections.Generic.List\u00601[[OdontoAPIMinimal.Models.PacienteOdontoModel, OdontoAPIMinimal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Description": "Recebe dados dos pacientes e treina um modelo de risco odontol\u00F3gico.",
+    "Summary": "Treina e salva o modelo odontol\u00F3gico"
+  },
+  {
     "ContainingType": "OdontoAPIMinimal.Middelewares.Endpoints.UsuarioEndpoint",
     "Method": "GetActiveUsuarios",
     "RelativePath": "usuarios/ativos",

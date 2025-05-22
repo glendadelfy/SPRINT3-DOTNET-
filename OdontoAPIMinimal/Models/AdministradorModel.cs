@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace OdontoAPIMinimal.Models
 {
+    [Table("ADMINISTRADOR")]
     public class AdministradorModel
     {
         [Column("role_user")]

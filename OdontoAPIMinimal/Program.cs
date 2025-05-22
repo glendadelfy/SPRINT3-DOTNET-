@@ -8,12 +8,13 @@ using Microsoft.OpenApi.Models;
 using OdontoAPIMinimal.Context.Database;
 using OdontoAPIMinimal.Middelewares.Endpoints;
 using OdontoAPIMinimal.Models;
+using OdontoAPIMinimal.Services;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
-// desenvolvido por Glenda Delfy 12/05/2025
+// desenvolvido por Glenda Delfy 21/05/2025
 // Add services to the container.
 
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -78,6 +79,22 @@ builder.Services.AddSwaggerGen(options =>
             new string[]{}
         }
     });
+    options.MapType<PacienteOdontoModel>(() => new OpenApiSchema
+    {
+        Type = "object",
+        Properties = new Dictionary<string, OpenApiSchema>
+        {
+            { "Idade", new OpenApiSchema { Type = "number", Format = "float", Description = "Idade do paciente em anos" } },
+            { "FrequenciaEscovacao", new OpenApiSchema { Type = "number", Format = "float", Description = "Número médio de escovações por dia" } },
+            { "FrequenciaVisitasAno", new OpenApiSchema { Type = "number", Format = "float", Description = "Número de visitas ao dentista por ano" } },
+            { "HistoricoCaries", new OpenApiSchema { Type = "boolean", Description = "Se o paciente já teve cáries" } },
+            { "DoencaGengival", new OpenApiSchema { Type = "boolean", Description = "Indica se o paciente tem doença gengival" } },
+            { "Fumante", new OpenApiSchema { Type = "boolean", Description = "Se o paciente é fumante" } },
+            { "ConsomeAcucarFrequente", new OpenApiSchema { Type = "boolean", Description = "Indica se o paciente consome açúcar regularmente" } },
+            { "RiscoAlto", new OpenApiSchema { Type = "boolean", Description = "Indica se o paciente está em alto risco odontológico" } }
+        },
+        Required = new HashSet<string> { "Idade", "FrequenciaEscovacao", "FrequenciaVisitasAno", "HistoricoCaries", "DoencaGengival", "Fumante", "ConsomeAcucarFrequente", "RiscoAlto" }
+    });
 });
 
 builder.Services.AddIdempotentAPI();
@@ -108,6 +125,8 @@ builder.Services.AddAuthentication(options =>
 });
 
 var app = builder.Build();
+
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -166,7 +185,10 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+app.RegisterRiscoOdontoEndpoint();
+
 app.RegisterUsuarioEndpoints();
+
 
 app.Run();
 
